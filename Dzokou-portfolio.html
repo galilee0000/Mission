@@ -326,7 +326,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:40px 0 60px}
     <div class="hero-grid">
       <div>
         <p class="apply"><span class="dot"></span><span lang="fr">Candidature · Chargé de communication, Fonds africain pour le changement climatique (BAD)</span><span lang="en">Application · Communications Officer, Africa Climate Change Fund (AfDB)</span></p>
-        <h1>Joseph Célestin <em>Dzokou</em></h1>
+        <h1>Joseph <span lang="fr">Célestin</span><span lang="en">Celestin</span> <em>Dzokou</em></h1>
         <p class="role"><span lang="fr">Stratège en communication et plaidoyer pour le développement en Afrique : climat, énergie, agriculture, éducation.</span><span lang="en">Communication and advocacy strategist for development in Africa: climate, energy, agriculture, education.</span></p>
         <ul class="chips">
           <li><span lang="fr">20+ ans d'expérience</span><span lang="en">20+ years' experience</span></li>
@@ -821,7 +821,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:40px 0 60px}
         <a href="tel:+237688864967">☏ +237 688 86 49 67</a>
       </div>
     </div>
-    <p class="fine">Joseph Célestin Dzokou · Yaoundé, Cameroun · <span lang="fr">Les documents présentés restent la propriété des institutions concernées.</span><span lang="en">Documents shown remain the property of the institutions concerned.</span></p>
+    <p class="fine">Joseph <span lang="fr">Célestin</span><span lang="en">Celestin</span> Dzokou · <span lang="fr">Yaoundé, Cameroun</span><span lang="en">Yaounde, Cameroon</span> · <span lang="fr">Les documents présentés restent la propriété des institutions concernées.</span><span lang="en">Documents shown remain the property of the institutions concerned.</span></p>
   </div>
 </footer>
 
@@ -845,7 +845,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:40px 0 60px}
 (function(){
   var root=document.documentElement;
   // language
-  function setLang(l){root.classList.remove('l-fr','l-en');root.classList.add('l-'+l);root.lang=l;try{localStorage.setItem('jcd-lang',l)}catch(e){}}
+  function setLang(l){root.classList.remove('l-fr','l-en');root.classList.add('l-'+l);root.lang=l;document.title=l==='en'?'Joseph Celestin Dzokou — Communication & climate portfolio':'Joseph Célestin Dzokou — Portfolio communication & climat';var pi=document.querySelector('.portrait img');if(pi)pi.alt=l==='en'?'Joseph Celestin Dzokou':'Joseph Célestin Dzokou';try{localStorage.setItem('jcd-lang',l)}catch(e){}}
   var saved=null;try{saved=localStorage.getItem('jcd-lang')}catch(e){}
   var q=new URLSearchParams(location.search).get('lang');
   setLang(q==='en'||q==='fr'?q:(saved||'fr'));
